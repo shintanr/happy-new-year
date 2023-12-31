@@ -26,10 +26,10 @@ function App() {
     />
     <div className="flex flex-col justify-center items-center min-h-screen gap-5">
     <span className="text-white text-4xl font-bold z-50">
-      <Typewriter words={newYearMessage} loop ={false} cursorStyle={"_"} cursor typeSpeed={20}  deleteSpeed={20}/>
+      <Typewriter words={newYearMessage} loop ={false} cursorStyle={"_"} cursor typeSpeed={10}  deleteSpeed={0.1}/>
     </span>
     <div className="z-50 text-white font-bold text-2xl">
-    <Countdown date={Date.now() + timeleft()} onComplete={() => setNewYearMessage([ "Welcome 2024!", "Happy New Year!"])}/>
+    <Countdown date={Date.now() + timeleft()} onComplete={() => setNewYearMessage([ "Welcome 2024! Hope This Year becomes the Best Year", ])}/>
     </div>
     </div>
     </>
